@@ -10,7 +10,7 @@ const CatchTime = ({ Component }) => {
 				<meta charSet="utf-8" />
 				<title>CatchTime</title>
 			</Head>
-			<Component />;
+			<Component />
 		</>
 	);
 };

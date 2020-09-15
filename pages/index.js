@@ -1,31 +1,38 @@
-import React from 'react';
-import { Devider, Steps } from 'antd';
+import React, { useState } from 'react';
+import { Affix, Button, U } from 'antd';
 import AppLayout from '../components/AppLayout';
 
 const Home = () => {
-	const { Step } = Steps;
+	const [top, setTop] = useState(10);
+	const [bottom, setBottom] = useState(10);
 
 	return (
 		<AppLayout>
 			<div>Hello, next</div>
-			<Steps progressDot current={1} direction="vertical">
-				<Step
-					title="Finished"
-					key="step_1"
-					description={[
-						<div>컴온</div>,
-						<div>컴온</div>,
-						<div>컴온</div>,
-						<div>컴온</div>,
-						<div>컴온</div>,
-						<div>컴온</div>,
-					]}
-				/>
-				<Step title="Finished" description="This is a description. This is a description." />
-				<Step title="In Progress" description="This is a description. This is a description." />
-				<Step title="Waiting" description="This is a description." />
-				<Step title="Waiting" description="This is a description." />
-			</Steps>
+			<Affix offsetTop={top}>
+				<ul id="demo-toc" class="toc">
+					<li title="Basic" class="">
+						<a href="#components-affix-demo-basic" class="">
+							Basic
+						</a>
+					</li>
+					<li title="Callback" class="">
+						<a href="#components-affix-demo-on-change" class="current">
+							Callback
+						</a>
+					</li>
+					<li title="Container to scroll." class="">
+						<a href="#components-affix-demo-target" class="">
+							Container to scroll.
+						</a>
+					</li>
+					<li title="API">
+						<a href="#API" class="">
+							API
+						</a>
+					</li>
+				</ul>
+			</Affix>
 		</AppLayout>
 	);
 };
