@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Affix, Button, U } from 'antd';
+import { Affix, Button } from 'antd';
 import AppLayout from '../components/AppLayout';
 
 const Home = () => {
@@ -10,24 +10,24 @@ const Home = () => {
 		<AppLayout>
 			<div>Hello, next</div>
 			<Affix offsetTop={top}>
-				<ul id="demo-toc" class="toc">
-					<li title="Basic" class="">
-						<a href="#components-affix-demo-basic" class="">
+				<ul id="demo-toc" className="toc">
+					<li title="Basic" className="">
+						<a href="#components-affix-demo-basic" className="">
 							Basic
 						</a>
 					</li>
-					<li title="Callback" class="">
-						<a href="#components-affix-demo-on-change" class="current">
+					<li title="Callback" className="">
+						<a href="#components-affix-demo-on-change" className="current">
 							Callback
 						</a>
 					</li>
-					<li title="Container to scroll." class="">
-						<a href="#components-affix-demo-target" class="">
+					<li title="Container to scroll." className="">
+						<a href="#components-affix-demo-target" className="">
 							Container to scroll.
 						</a>
 					</li>
 					<li title="API">
-						<a href="#API" class="">
+						<a href="#API" className="">
 							API
 						</a>
 					</li>
